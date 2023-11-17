@@ -1,2 +1,2 @@
 # GRAPHQL-EXERCISE
-Exercising myself to Appolo GraphQL
+Exercising myself to Apollo GraphQL
