@@ -1,6 +1,6 @@
 const {StudentList} = [
     {
-        id: 0,
+        id: 5,
         firstName: "Alfred",
         lastName: "Kambale"
     },
@@ -25,5 +25,5 @@ const {StudentList} = [
         lastName: "Baraka"
     }
 
-]
+];
 module.exports = {StudentList};
