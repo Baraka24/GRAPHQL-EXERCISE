@@ -1,4 +1,4 @@
-const {StudentList} = [
+const StudentList = [
     {
         id: 5,
         firstName: "Alfred",
