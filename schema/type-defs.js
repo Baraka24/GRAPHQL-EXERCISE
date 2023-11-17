@@ -10,3 +10,4 @@ const typeDefs = gql`
     Students: [Student!]!
     }
 `;
+module.exports = {typeDefs};
