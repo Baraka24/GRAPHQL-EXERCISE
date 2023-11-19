@@ -15,6 +15,10 @@ const resolvers = {
       const id = args.id;
       const StudentById = _.find(StudentList, {id: Number(id)});
       return StudentById;
+    },
+    CourseByName: (parent, args) => {
+      const name = args.name;
+      const CourseByName = _.find(CourseList, {name:name});
     }
   }
 };
