@@ -19,6 +19,7 @@ const resolvers = {
     CourseByName: (parent, args) => {
       const name = args.name;
       const CourseByName = _.find(CourseList, {name:name});
+      return CourseByName;
     }
   }
 };
