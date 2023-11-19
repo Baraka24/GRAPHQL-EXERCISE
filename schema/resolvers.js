@@ -1,4 +1,4 @@
-const { StudentList } = require("../my-data");
+const { StudentList, CourseList } = require("../my-data");
 
 const resolvers = {
   Query: {
@@ -7,6 +7,9 @@ const resolvers = {
 
       // Make sure to return the StudentList array
       return StudentList;
+    },
+    Courses: () => {
+      return CourseList;
     }
   }
 };
