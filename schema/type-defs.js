@@ -9,5 +9,10 @@ const typeDefs = gql`
     type Query {
     Students: [Student!]!
     }
+    enum Classes {
+        L1
+        L2
+        L3
+    }
 `;
 module.exports = {typeDefs};
