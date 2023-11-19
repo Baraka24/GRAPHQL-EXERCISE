@@ -10,6 +10,11 @@ const resolvers = {
     },
     Courses: () => {
       return CourseList;
+    },
+    StudentById: (parent, args) => {
+      const id = args.id;
+      const StudentById = _.find(StudentList, {id: Number(id)});
+      return StudentById;
     }
   }
 };
