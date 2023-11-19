@@ -1,5 +1,5 @@
 const { StudentList, CourseList } = require("../my-data");
-
+const _ = require("lodash");
 const resolvers = {
   Query: {
     Students() {
