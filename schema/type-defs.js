@@ -5,11 +5,12 @@ const typeDefs = gql`
         id: ID!
         firstName: String!
         lastName: String!
+        level: Level
     }
     type Query {
     Students: [Student!]!
     }
-    enum Classes {
+    enum Level {
         L1
         L2
         L3
