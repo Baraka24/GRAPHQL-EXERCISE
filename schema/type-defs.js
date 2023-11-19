@@ -12,6 +12,7 @@ const typeDefs = gql`
     Students: [Student!]!
     Courses: [Course!]!
     StudentById(id:ID!) : Student!
+    CourseByName(name:String) : Course
     }
     enum Level {
         L1
