@@ -11,6 +11,7 @@ const typeDefs = gql`
     type Query {
     Students: [Student!]!
     Courses: [Course!]!
+    StudentById(id:ID!) : Student!
     }
     enum Level {
         L1
@@ -20,7 +21,6 @@ const typeDefs = gql`
     type Course {
         id: ID!
         name: String!
-
     }
 `;
 module.exports = {typeDefs};
