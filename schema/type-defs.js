@@ -32,6 +32,8 @@ const typeDefs = gql`
     input updateStudentInput {
         id: ID!
         NewfirstName: String!
+        NewlastName: String!
+        level: Level = L3
     }
     type Mutation {
         createStudent(input: CreateStudentInput): Student
