@@ -25,7 +25,7 @@ const resolvers = {
   Mutation: {
     createStudent: (parent, args) => {
       const student = args.input;
-      const lastId = StudentList[StudentList.length-1];
+      const lastId = StudentList[StudentList.length-1].id;
       student.id = lastId +1;
       StudentList.push(student);
       return student;
