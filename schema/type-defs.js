@@ -31,6 +31,12 @@ const typeDefs = gql`
     }
     type Mutation {
         createStudent(input: CreateStudentInput): Student
+        updateStudent(input: updateStudentInput): Student
+    }
+    input updateStudentInput {
+        id: ID!
+        firstName: String!
+        lastName: String!
     }
 
 `;
