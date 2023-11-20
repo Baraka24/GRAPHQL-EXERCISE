@@ -21,6 +21,15 @@ const resolvers = {
       const CourseByName = _.find(CourseList, {name:name});
       return CourseByName;
     }
+  },
+  Mutation: {
+    createStudent: (parent, args) => {
+      const student = args.input;
+      const lastId = StudentList[StudentList.length-1];
+      student.id = lastId +1;
+      StudentList.push(student);
+      return student;
+    }
   }
 };
 
