@@ -41,6 +41,11 @@ const resolvers = {
         }
       });
       return studentUpdated;
+    },
+    deleteStudent: (parent, args) => {
+      const id =  args.id;
+      _.remove(StudentList, (student) => student.id === Number(id));
+      return null;
     }
   }
 };
