@@ -31,12 +31,13 @@ const resolvers = {
       return student;
     },
     updateStudent: (parent, args) => {
-      const { id,  NewfirstName, NewlastName} = args.input;
+      const { id,  NewfirstName, NewlastName, level} = args.input;
       let studentUpdated;
       StudentList.forEach((student) => {
         if(student.id === Number(id)) {
           student.firstName = NewfirstName;
           student.lastName = NewlastName;
+          student.level =level;
         }
       });
       return studentUpdated;
