@@ -29,15 +29,15 @@ const typeDefs = gql`
         lastName: String!
         level: Level = L3
     }
+    input updateStudentInput {
+        id: ID!
+        NewfirstName: String!
+    }
     type Mutation {
         createStudent(input: CreateStudentInput): Student
         updateStudent(input: updateStudentInput): Student
     }
-    input updateStudentInput {
-        id: ID!
-        firstName: String!
-        lastName: String!
-    }
+
 
 `;
 module.exports = {typeDefs};

@@ -29,6 +29,16 @@ const resolvers = {
       student.id = lastId +1;
       StudentList.push(student);
       return student;
+    },
+    updateStudent: (parent, args) => {
+      const { id,  NewfirstName} = args.input;
+      let studentUpdated;
+      StudentList.forEach((student) => {
+        if(student.id === Number(id)) {
+          student.firstName = NewfirstName;
+        }
+      });
+      return studentUpdated;
     }
   }
 };
